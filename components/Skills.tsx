@@ -6,10 +6,7 @@ type Props = {};
 
 function Skills({}: Props) {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
+    <div
       className="h-screen flex relative flex-col text-center md:text-left xl:flex-row 
     max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-start sm:items-center mx-6 sm:mx-0"
     >
@@ -35,7 +32,7 @@ function Skills({}: Props) {
         <Skill src={"./images/mongodb.png"} percent={"60"} />
         <Skill src={"./images/mysql.png"} percent={"50"} />
       </div>
-    </motion.div>
+    </div>
   );
 }
 
