@@ -6,7 +6,10 @@ type Props = {};
 
 function Skills({}: Props) {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
       className="h-screen flex relative flex-col text-center md:text-left xl:flex-row 
     max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-start sm:items-center mx-6 sm:mx-0"
     >
@@ -18,7 +21,7 @@ function Skills({}: Props) {
         Hover over a skill for current proficiency
       </h3>
 
-      <div className="grid grid-cols-4 gap-2 sm:gap-5 h-[60vh]">
+      <div className="grid grid-cols-4 gap-2 sm:gap-5 h-[60vh] mt-10">
         <Skill src={"./images/javascript.png"} percent={"80"} />
         <Skill src={"./images/typescript.png"} percent={"75"} />
         <Skill src={"./images/react.png"} percent={"75"} />
@@ -32,7 +35,7 @@ function Skills({}: Props) {
         <Skill src={"./images/mongodb.png"} percent={"60"} />
         <Skill src={"./images/mysql.png"} percent={"50"} />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

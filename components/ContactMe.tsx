@@ -72,9 +72,9 @@ function ContactMe({}: Props) {
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          className="flex flex-col space-y-2 w-[80%] sm:w-fit mx-auto"
         >
-          <div className="flex sm:space-x-2">
+          <div className="flex flex-col gap-2 sm:flex-row sm:space-x-2 justify-center">
             <input
               {...register("name")}
               placeholder="Name"
