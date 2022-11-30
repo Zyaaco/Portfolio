@@ -21,19 +21,19 @@ function Skills({}: Props) {
         Hover over a skill for current proficiency
       </h3>
 
-      <div className="grid grid-cols-4 gap-2 sm:gap-5 h-[60vh] mt-10">
-        <Skill src={"./images/javascript.png"} percent={"80"} />
-        <Skill src={"./images/typescript.png"} percent={"75"} />
-        <Skill src={"./images/react.png"} percent={"75"} />
-        <Skill src={"./images/css.png"} percent={"80"} />
-        <Skill src={"./images/html.png"} percent={"100"} />
-        <Skill src={"./images/nextjs.png"} percent={"65"} />
-        <Skill src={"./images/nodejs.png"} percent={"70"} />
-        <Skill src={"./images/vscode.png"} percent={"90"} />
-        <Skill src={"./images/tailwindcss.png"} percent={"75"} />
-        <Skill src={"./images/sanity.png"} percent={"50"} />
-        <Skill src={"./images/mongodb.png"} percent={"60"} />
-        <Skill src={"./images/mysql.png"} percent={"50"} />
+      <div className="grid grid-cols-4 gap-2 sm:gap-5 h-[45vh] w-[60vh] sm:h-[57vh] sm:w-[80vh] mt-10">
+        <Skill src={"/images/javascript.png"} percent={"80"} />
+        <Skill src={"/images/typescript.png"} percent={"75"} />
+        <Skill src={"/images/react.png"} percent={"75"} />
+        <Skill src={"/images/css.png"} percent={"80"} />
+        <Skill src={"/images/html.png"} percent={"100"} />
+        <Skill src={"/images/nextjs.png"} percent={"65"} />
+        <Skill src={"/images/nodejs.png"} percent={"70"} />
+        <Skill src={"/images/vscode.png"} percent={"90"} />
+        <Skill src={"/images/tailwindcss.png"} percent={"75"} />
+        <Skill src={"/images/sanity.png"} percent={"50"} />
+        <Skill src={"/images/mongodb.png"} percent={"60"} />
+        <Skill src={"/images/mysql.png"} percent={"50"} />
       </div>
     </motion.div>
   );
