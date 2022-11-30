@@ -28,16 +28,8 @@ export default function Header({}: Props) {
           url="https://github.com/zyaaco"
           fgColor={"#EFF6E0"}
           bgColor="transparent"
-        />
-        <SocialIcon
-          url="https://facebook.com/orestas.ksanas"
-          fgColor={"#EFF6E0"}
-          bgColor="transparent"
-        />
-        <SocialIcon
-          url="https://reddit.com/u/zyaaco"
-          fgColor={"#EFF6E0"}
-          bgColor="transparent"
+          target="_blank"
+          rel="noopener noreferrer"
         />
       </motion.div>
 

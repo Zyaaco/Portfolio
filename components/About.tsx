@@ -12,7 +12,7 @@ function About({}: Props) {
       className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto
     items-center"
     >
-      <h3 className="absolute top-14 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-10 uppercase tracking-[20px] text-[#AEC3B0] text-2xl">
         About
       </h3>
 
@@ -29,7 +29,7 @@ function About({}: Props) {
           duration: 1.2,
         }}
         viewport={{ once: true }}
-        src="https://cdn.discordapp.com/attachments/872085751590957096/1022205292877992096/Screenshot_20220902-145334_Gallery.jpg?size=4096"
+        src="./images/me.jpg"
         className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-xl
          object-cover md:rounded-lg md:w-64 md:h-64 xl:w-[500px] xl:h-[500px]"
       />
@@ -43,9 +43,8 @@ function About({}: Props) {
           I am a full-stack web developer with a passion for creating and
           designing websites. I have a strong desire to learn new technologies.
           I am a self-starter and a quick learner. I am always looking for new
-          challenges and opportunities to grow as a developer. You will not
-          regret hiring me. I am a hard worker and I will do a great job for
-          you.
+          challenges and opportunities to grow as a developer. I am a hard
+          worker and I will do a great job for you.
         </p>
       </div>
     </motion.div>
