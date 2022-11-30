@@ -17,7 +17,10 @@ const Home: NextPage = () => {
       <Head>
         <title>Orestas portfolio</title>
         <meta name="description" content="The developer for you" />
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href={`${process.env.NEXT_PUBLIC_FAVICON}/favicon.ico`}
+        />
       </Head>
 
       <Header />
