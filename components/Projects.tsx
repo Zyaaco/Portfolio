@@ -36,7 +36,7 @@ function Projects({}: Props) {
       className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row 
     max-w-full justify-evenly mx-auto items-center z-0"
     >
-      <h3 className="absolute top-14 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-14 uppercase tracking-[20px] text-[#AEC3B0] text-2xl">
         Projects
       </h3>
 
@@ -63,7 +63,7 @@ function Projects({}: Props) {
               }}
               viewport={{ once: true }}
               src={project.img}
-              style={{ height: "50vh" }}
+              style={{ height: "50vh", width: "100vw" }}
               alt=""
             />
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
