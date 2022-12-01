@@ -30,8 +30,8 @@ function About({}: Props) {
         }}
         viewport={{ once: true }}
         src="./images/me.png"
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-xl
-         object-cover md:rounded-lg md:w-64 md:h-64 xl:w-[500px] xl:h-[500px]"
+        className="-mb-20 md:mb-0 flex-shrink-0 w-40 h-40 rounded-xl
+         object-cover md:rounded-lg md:w-56 md:h-56 xl:w-[350px] xl:h-[350px]"
       />
 
       <div className="space-y-10 px-0 md:px-10">
