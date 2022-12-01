@@ -15,7 +15,7 @@ function Projects({}: Props) {
     },
     {
       name: "Card Quiz Generator",
-      scrlink: "https://zyaaco.github.io/Card-quiz",
+      srclink: "https://zyaaco.github.io/Card-quiz",
       img: "./images/Card-quiz.png",
       description:
         "A quick and fun card quiz generator using an api and React.",
