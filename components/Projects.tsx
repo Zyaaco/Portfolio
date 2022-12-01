@@ -63,10 +63,10 @@ function Projects({}: Props) {
               }}
               viewport={{ once: true }}
               src={project.img}
-              style={{ height: "50vh", width: "100vw" }}
+              className="h-[50vh] w-[90vw] md:w-[40vw]"
               alt=""
             />
-            <div className="space-y-10 px-0 md:px-10 max-w-6xl">
+            <div className="space-y-10 px-0 w-[80vh] md:px-10 md:max-w-6xl">
               <h4 className="text-4xl font-semibold text-center">
                 <span className="underline decoration-[#EFF6E0]/50">
                   Project {i + 1} of {projects.length}:
