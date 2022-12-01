@@ -42,7 +42,7 @@ function ContactMe({}: Props) {
             <PhoneIcon className="text-[#AEC3B0] h-7 w-7 animate-pulse" />
             <a
               className="text-md sm:text-2xl"
-              href="tel:"
+              href="tel:+37064745605"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -54,7 +54,7 @@ function ContactMe({}: Props) {
             <EnvelopeIcon className="text-[#AEC3B0] h-7 w-7 animate-pulse" />
             <a
               className="text-md sm:text-2xl"
-              href="mailto:"
+              href="mailto:orestasksanas13@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
