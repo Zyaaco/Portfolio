@@ -41,7 +41,7 @@ function Projects({}: Props) {
       </h3>
 
       <div
-        className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-thin scrollbar-track-gray-400/20
+        className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20
       scrollbar-thumb-[#AEC3B0]/80"
       >
         {projects.map((project, i) => (
@@ -63,7 +63,8 @@ function Projects({}: Props) {
               }}
               viewport={{ once: true }}
               src={project.img}
-              className="md:h-[50vh]"
+              className="md:h-[50vh] cursor-pointer"
+              onClick={() => window.open(project.srclink, "_blank")}
               alt=""
             />
             <div className="space-y-10 px-0 w-[50vh] md:w-[80vh] md:px-10 md:max-w-6xl">
