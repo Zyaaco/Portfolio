@@ -1,10 +1,33 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type Props = {};
 
 function Projects({}: Props) {
-  const projects = [1, 2, 3, 4, 5];
+  const projects = [
+    {
+      name: "Wordle Clone",
+      srclink: "https://zyaaco.github.io/Wordle",
+      img: "./images/Wordle.png",
+      description:
+        "A wordle clone project I worked on. This project comes with many challenges but is relatively fun. Made with plain react.",
+    },
+    {
+      name: "Card Quiz Generator",
+      scrlink: "https://zyaaco.github.io/Card-quiz",
+      img: "./images/Card-quiz.png",
+      description:
+        "A quick and fun card quiz generator using an api and React.",
+    },
+    {
+      name: "Currency Converter",
+      srclink: "https://zyaaco.github.io/Currency-converter",
+      img: "./images/currency-converter.png",
+      description:
+        "Just a short project to create a currency converter using a currency api.",
+    },
+  ];
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -39,21 +62,28 @@ function Projects({}: Props) {
                 duration: 1.2,
               }}
               viewport={{ once: true }}
-              src="https://cdn.sanity.io/images/ltuexkre/production/af7ca99b5a796d0698cf9121a4a0795b5022b6be-666x375.png"
+              src={project.img}
+              style={{ height: "50vh" }}
               alt=""
             />
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-4xl font-semibold text-center">
                 <span className="underline decoration-[#EFF6E0]/50">
-                  Case Study {i + 1} of {projects.length}:
+                  Project {i + 1} of {projects.length}:
                 </span>{" "}
-                UPS clone
+                {
+                  <a
+                    href={project.srclink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {project.name}
+                  </a>
+                }
               </h4>
 
               <p className="text-lg text-center md:text-left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                ac est sem. Suspendisse elementum urna quis nunc viverra
-                bibendum. Pellentesque habitant morbi tristique senectus.
+                {project.description}
               </p>
             </div>
           </div>
