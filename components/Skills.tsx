@@ -21,7 +21,7 @@ function Skills({}: Props) {
         Hover over a skill for current proficiency
       </h3>
 
-      <div className="grid grid-cols-4 gap-2 sm:gap-5 h-[45vh] w-[60vh] sm:h-[57vh] sm:w-[80vh] mt-10">
+      <div className="grid grid-cols-4 gap-2 sm:gap-5 h-[60vh] mt-10">
         <Skill src={"/images/javascript.png"} percent={"80"} />
         <Skill src={"/images/typescript.png"} percent={"75"} />
         <Skill src={"/images/react.png"} percent={"75"} />
