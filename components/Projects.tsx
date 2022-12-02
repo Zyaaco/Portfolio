@@ -70,16 +70,16 @@ function Projects({}: Props) {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row 
-    max-w-full justify-evenly mx-auto items-center z-0"
+    max-w-full justify-evenly mx-auto items-center z-0 scroll-smooth"
     >
       <h3 className="absolute top-14 uppercase tracking-[20px] text-[#AEC3B0] text-2xl">
         Projects
       </h3>
       <button
-        className="absolute w-12 h-12 left-10 top-[50vh] text-center z-30"
+        className="absolute w-12 h-12 left-10 top-[50vh] text-center z-30 scroll-smooth"
         onClick={scrollLeft}
       >
-        <a className="absolute top-0 right-0 left-0 bg-[#EFF6E0] border-2 rounded-full">
+        <a className="absolute top-0 right-0 left-0 bg-[#EFF6E0] border-2 rounded-full opacity-10 hover:opacity-100 transition-opacity scroll-smooth">
           <svg
             clip-rule="evenodd"
             fill-rule="evenodd"
@@ -96,10 +96,10 @@ function Projects({}: Props) {
         </a>
       </button>
       <button
-        className="absolute w-12 h-12 right-10 top-[50vh] text-center z-30"
+        className="absolute w-12 h-12 right-10 top-[50vh] text-center z-30 scroll-smooth"
         onClick={scrollRight}
       >
-        <a className="absolute top-0 right-0 left-0 bg-[#EFF6E0] border-2 rounded-full">
+        <a className="absolute top-0 right-0 left-0 bg-[#EFF6E0] border-2 rounded-full opacity-10 hover:opacity-100 transition-opacity scroll-smooth">
           <svg
             clip-rule="evenodd"
             fill-rule="evenodd"
