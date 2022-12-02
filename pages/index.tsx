@@ -11,7 +11,7 @@ import Skills from "../components/Skills";
 const Home: NextPage = () => {
   return (
     <div
-      className={`bg-[#01161E] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20
+      className={`bg-[#01161E] text-white h-screen snap-y snap-proximity overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20
       scrollbar-thumb-[#AEC3B0]/80`}
     >
       <Head>
@@ -37,11 +37,11 @@ const Home: NextPage = () => {
         <Skills />
       </section>
 
-      <section id="projects" className="snap-start">
+      <section id="projects" className="snap-center">
         <Projects />
       </section>
 
-      <section id="contact" className="snap-start">
+      <section id="contact" className="snap-end">
         <ContactMe />
       </section>
 

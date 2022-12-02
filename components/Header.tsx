@@ -48,7 +48,7 @@ export default function Header({}: Props) {
           transition={{
             duration: 1.3,
           }}
-          className="flex flex-row items-center text-gray-300 cursor-pointer"
+          className="flex flex-row items-center text-[#EFF6E0] cursor-pointer"
         >
           <SocialIcon
             className="cursor-pointer"
@@ -56,9 +56,12 @@ export default function Header({}: Props) {
             fgColor={"#EFF6E0"}
             bgColor="transparent"
           />
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+          <a
+            className="uppercase hidden md:inline-flex text-sm text-[#EFF6E0]"
+            href="#contact"
+          >
             Contact me
-          </p>
+          </a>
         </motion.div>
       </Link>
     </header>

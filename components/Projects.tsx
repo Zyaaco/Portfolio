@@ -1,10 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Project from "./Project";
 
 type Props = {};
+type project = {
+  name: string;
+  srclink: string;
+  img: string;
+  description: string;
+  id: number;
+};
 
 function Projects({}: Props) {
+  let left = -1;
+  let right = 1;
   const projects = [
     {
       name: "Wordle Clone",
@@ -12,6 +22,7 @@ function Projects({}: Props) {
       img: "./images/Wordle.png",
       description:
         "A wordle clone project I worked on. This project comes with many challenges but is relatively fun. Made with plain react.",
+      id: 0,
     },
     {
       name: "Card Quiz Generator",
@@ -19,6 +30,7 @@ function Projects({}: Props) {
       img: "./images/Card-quiz.png",
       description:
         "A quick and fun card quiz generator using an api and React.",
+      id: 1,
     },
     {
       name: "Currency Converter",
@@ -26,8 +38,29 @@ function Projects({}: Props) {
       img: "./images/currency-converter.png",
       description:
         "Just a short project to create a currency converter using a currency api.",
+      id: 2,
     },
   ];
+  function scrollLeft() {
+    if (Number(window.location.href.slice(-1)) in [0, 1, 2]) {
+      left = Number(window.location.href.slice(-1)) - 1;
+      right = Number(window.location.href.slice(-1)) + 1;
+    }
+    if (left <= -1) return;
+    window.location.href = `#${left}`;
+    left = Number(window.location.href.slice(-1)) - 1;
+    right = Number(window.location.href.slice(-1)) + 1;
+  }
+  function scrollRight() {
+    if (Number(window.location.href.slice(-1)) in [0, 1, 2]) {
+      left = Number(window.location.href.slice(-1)) - 1;
+      right = Number(window.location.href.slice(-1)) + 1;
+    }
+    if (right >= projects.length) return;
+    window.location.href = `#${right}`;
+    right += 1;
+    left += 1;
+  }
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -44,53 +77,52 @@ function Projects({}: Props) {
         className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20
       scrollbar-thumb-[#AEC3B0]/80"
       >
-        {projects.map((project, i) => (
-          <div
-            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
-            key={i}
-          >
-            <motion.img
-              initial={{
-                y: -300,
-                opacity: 0,
-              }}
-              whileInView={{
-                y: 0,
-                opacity: 1,
-              }}
-              transition={{
-                duration: 1.2,
-              }}
-              viewport={{ once: true }}
-              src={project.img}
-              className="md:h-[50vh] cursor-pointer"
-              onClick={() => window.open(project.srclink, "_blank")}
-              alt=""
-            />
-            <div className="space-y-10 px-0 w-[50vh] md:w-[80vh] md:px-10 md:max-w-6xl">
-              <h4 className="text-4xl font-semibold text-center">
-                <span className="underline decoration-[#EFF6E0]/50">
-                  Project {i + 1} of {projects.length}:
-                </span>{" "}
-                {
-                  <a
-                    href={project.srclink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {project.name}
-                  </a>
-                }
-              </h4>
-
-              <p className="text-lg text-center md:text-left">
-                {project.description}
-              </p>
-            </div>
+        <button
+          className="fixed top-0 left-0 right-0 text-center"
+          onClick={scrollLeft}
+        >
+          <a className="absolute w-12 h-12 left-10 top-[50vh] bg-[#EFF6E0] border-2 rounded-full">
+            <svg
+              clip-rule="evenodd"
+              fill-rule="evenodd"
+              stroke-linejoin="round"
+              stroke-miterlimit="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m9.474 5.209s-4.501 4.505-6.254 6.259c-.147.146-.22.338-.22.53s.073.384.22.53c1.752 1.754 6.252 6.257 6.252 6.257.145.145.336.217.527.217.191-.001.383-.074.53-.221.293-.293.294-.766.004-1.057l-4.976-4.976h14.692c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-14.692l4.978-4.979c.289-.289.287-.761-.006-1.054-.147-.147-.339-.221-.53-.221-.191-.001-.38.071-.525.215z"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
+        </button>
+        <button
+          className="fixed top-0 left-0 right-0 text-center"
+          onClick={scrollRight}
+        >
+          <a className="absolute w-12 h-12 right-10 top-[50vh] bg-[#EFF6E0] border-2 rounded-full">
+            <svg
+              clip-rule="evenodd"
+              fill-rule="evenodd"
+              stroke-linejoin="round"
+              stroke-miterlimit="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
+        </button>
+        {projects.map((project, index) => (
+          <div key={index}>
+            <Project project={project} i={index} length={projects.length} />
           </div>
         ))}
       </div>
-
       <div className="w-full absolute top-[30%] bg-[#AEC3B0]/10 left-0 h-[400px] -skew-y-[-12deg]" />
     </motion.div>
   );
