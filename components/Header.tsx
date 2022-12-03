@@ -31,6 +31,13 @@ export default function Header({}: Props) {
           target="_blank"
           rel="noopener noreferrer"
         />
+        <SocialIcon
+          url="https://www.linkedin.com/in/orestas-ksanas-2b173024b/"
+          fgColor={"#EFF6E0"}
+          bgColor="transparent"
+          target="_blank"
+          rel="noopener noreferrer"
+        />
       </motion.div>
 
       <Link href="#contact">
