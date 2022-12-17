@@ -40,11 +40,13 @@ function About({}: Props) {
           about me
         </h4>
         <p className="text-base">
-          I am a full-stack web developer with a passion for creating and
-          designing websites. I have a strong desire to learn new technologies.
-          I am a self-starter and a quick learner. I am always looking for new
-          challenges and opportunities to grow as a developer. I am a hard
-          worker and I will do a great job for you.
+          Self-taught in Javascript and React, I have become a proficient web
+          developer and software engineer with a focus on building user-friendly
+          web applications. I have a track record of success in problem-solving
+          and team collaboration, and I am committed to ongoing learning and
+          staying up-to-date in the industry. I am confident in my skills and
+          ready to make a positive impact as a web developer and software
+          engineer on any team.
         </p>
       </div>
     </motion.div>
