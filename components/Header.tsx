@@ -32,7 +32,7 @@ export default function Header({}: Props) {
           rel="noopener noreferrer"
         />
         <SocialIcon
-          url="https://www.linkedin.com/in/orestas-ksanas-2b173024b/"
+          url="https://www.linkedin.com/in/orestas-kšanas-2b173024b/"
           fgColor={"#EFF6E0"}
           bgColor="transparent"
           target="_blank"
