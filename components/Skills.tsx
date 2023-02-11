@@ -18,22 +18,23 @@ function Skills({}: Props) {
       </h3>
 
       <h3 className="absolute top-24 uppercase tracking-[3px] text-[#AEC3B0] text-sm">
-        Hover over a skill for current proficiency
+        Hover over a skill for the title
       </h3>
 
       <div className="grid grid-cols-4 gap-2 sm:gap-5 h-[60vh] mt-10">
-        <Skill src={"./images/javascript.png"} percent={"80"} />
-        <Skill src={"./images/typescript.png"} percent={"75"} />
-        <Skill src={"./images/react.png"} percent={"75"} />
-        <Skill src={"./images/css.png"} percent={"80"} />
-        <Skill src={"./images/html.png"} percent={"100"} />
-        <Skill src={"./images/nextjs.png"} percent={"65"} />
-        <Skill src={"./images/nodejs.png"} percent={"70"} />
-        <Skill src={"./images/vscode.png"} percent={"90"} />
-        <Skill src={"./images/tailwindcss.png"} percent={"75"} />
-        <Skill src={"./images/sanity.png"} percent={"50"} />
-        <Skill src={"./images/mongodb.png"} percent={"60"} />
-        <Skill src={"./images/mysql.png"} percent={"50"} />
+        <Skill src={"./images/javascript.png"} name={"JS"} />
+        <Skill src={"./images/typescript.png"} name={"TS"} />
+        <Skill src={"./images/react.png"} name={"React"} />
+        <Skill src={"./images/css.png"} name={"CSS"} />
+        <Skill src={"./images/html.png"} name={"HTML"} />
+        <Skill src={"./images/nextjs.png"} name={"Nextjs"} />
+        <Skill src={"./images/nodejs.png"} name={"Nodejs"} />
+        <Skill src={"./images/vscode.png"} name={"VSCode"} />
+        <Skill src={"./images/tailwindcss.png"} name={"TWCSS"} />
+        <Skill src={"./images/sanity.png"} name={"Sanity"} />
+        <Skill src={"./images/mongodb.png"} name={"MongoDB"} />
+        <Skill src={"./images/mysql.png"} name={"MySQL"} />
+        <Skill src={"./images/stripe.png"} name={"Stripe"} />
       </div>
     </motion.div>
   );

@@ -8,7 +8,7 @@ type Props = {
   percent: string;
 };
 
-function Skill({ directionLeft, src, percent }: Props) {
+function Skill({ directionLeft, src, name }: Props) {
   return (
     <div className="group relative flex cursor-pointer">
       <motion.img
@@ -25,9 +25,7 @@ function Skill({ directionLeft, src, percent }: Props) {
       md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0"
       >
         <div className="flex items-center justify-center h-full">
-          <p className="text-3xl font-bold text-black opacity-100">
-            {percent}%
-          </p>
+          <p className="text-3xl font-bold text-black opacity-100">{name}</p>
         </div>
       </div>
     </div>
