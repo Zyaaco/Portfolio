@@ -5,7 +5,7 @@ import Image from "next/image";
 type Props = {
   directionLeft?: boolean;
   src: string;
-  name: string;
+  percent: string;
 };
 
 function Skill({ directionLeft, src, name }: Props) {
