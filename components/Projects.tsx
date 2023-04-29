@@ -85,24 +85,6 @@ function Projects({}: Props) {
   //   right += 1;
   //   left += 1;
   // }
-  const slider = createRef();
-  function scrollLeft() {
-    const sliderIndex = parseInt(
-      getComputedStyle(slider.current).getPropertyValue("--slider-index")
-    );
-    if (sliderIndex !== 0) {
-      slider.current.style.setProperty("--slider-index", sliderIndex - 1);
-    }
-  }
-
-  function scrollRight() {
-    const sliderIndex = parseInt(
-      getComputedStyle(slider.current).getPropertyValue("--slider-index")
-    );
-    if (sliderIndex !== projects.length - 1) {
-      slider.current.style.setProperty("--slider-index", sliderIndex + 1);
-    }
-  }
   return (
     <motion.div
       initial={{ opacity: 0 }}
