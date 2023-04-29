@@ -13,3 +13,9 @@
     placeholder-[#E0E6E2]/80 transition-all focus:border-[#124559]/40 focus:text-[#AEC3B0] hover:border-[#EFF6E0]/40;
   }
 }
+
+.slider {
+  --slider-index: 0;
+  transform: translateX(calc(var(--slider-index) * -100%));
+  transition-duration: 300ms;
+}
