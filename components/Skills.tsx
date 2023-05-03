@@ -32,8 +32,7 @@ function Skills({}: Props) {
         <Skill src={"./images/vscode.png"} name={"VSCode"} />
         <Skill src={"./images/tailwindcss.png"} name={"TWCSS"} />
         <Skill src={"./images/sanity.png"} name={"Sanity"} />
-        <Skill src={"./images/mongodb.png"} name={"MongoDB"} />
-        <Skill src={"./images/mysql.png"} name={"MySQL"} />
+        <Skill src={"./images/supabase.png"} name={"Supabase"} />
         <Skill src={"./images/stripe.png"} name={"Stripe"} />
       </div>
     </motion.div>
