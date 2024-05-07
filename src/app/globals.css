@@ -3,31 +3,35 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --text: aliceblue;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--text);
+  background: linear-gradient(to bottom, #052227, #07323a);
+  min-height: 100svh;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@layer components {
+  .heroButton {
+    @apply px-6 py-2 border border-[#242424] rounded-lg uppercase text-sm font-semibold tracking-widest text-[#AEC3B0] transition-all
+  hover:border-[#EFF6E0] hover:text-[#AEC3B0]/40 hover:font-extrabold;
+  }
+
+  .contactInput {
+    @apply outline-none bg-slate-400/10 rounded-sm border-b py-1 sm:px-6 sm:py-4 border-[#EFF6E0] text-gray-500 
+    placeholder-[#E0E6E2]/80 transition-all focus:border-[#124559]/40 focus:text-[#AEC3B0] hover:border-[#EFF6E0]/40;
+  }
+}
+
+.slider {
+  --slider-index: 0;
+  transform: translateX(calc(var(--slider-index) * -100%));
+  transition-duration: 300ms;
 }
