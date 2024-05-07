@@ -18,7 +18,7 @@ const projects: project[] = [
   {
     name: "Chat App",
     srclink: "https://chat-app-zyaaco.vercel.app",
-    img: "/projects/chat-app.png",
+    img: "./projects/chat-app.png",
     description:
       "A simple chat app made with Next.js and Supabase. This app is a fully functional chating application with authentication.",
     github_link: "https://github.com/zyaaco/Chat-App",
@@ -27,7 +27,7 @@ const projects: project[] = [
   {
     name: "Ecommerce Store",
     srclink: "https://sample-store-one.vercel.app",
-    img: "/projects/ecommerce.png",
+    img: "./projects/ecommerce.png",
     description:
       "A simple ecommerce store made with Next.js, Sanity and Stripe. This app has fully functional checkout with full responsiveness and properly working UX design",
     github_link: "https://github.com/Zyaaco/Sample-store",
@@ -36,7 +36,7 @@ const projects: project[] = [
   {
     name: "Wordle Clone",
     srclink: "https://zyaaco.github.io/Wordle",
-    img: "/projects/Wordle.png",
+    img: "./projects/Wordle.png",
     description:
       "A wordle clone project I worked on. This project comes with many challenges but is relatively fun. Made with plain react.",
     github_link: "https://github.com/zyaaco/Wordle",
@@ -45,7 +45,7 @@ const projects: project[] = [
   {
     name: "Card Quiz Generator",
     srclink: "https://zyaaco.github.io/Card-quiz",
-    img: "/projects/Card-quiz.png",
+    img: "./projects/Card-quiz.png",
     description: "A quick and fun card quiz generator using an api and React.",
     github_link: "https://github.com/zyaaco/Card-quiz",
     id: 3,
@@ -53,7 +53,7 @@ const projects: project[] = [
   {
     name: "Currency Converter",
     srclink: "https://zyaaco.github.io/Currency-converter",
-    img: "/projects/currency-converter.png",
+    img: "./projects/currency-converter.png",
     description:
       "Just a short project to create a currency converter using a currency api.",
     github_link: "https://github.com/zyaaco/Currency-converter",

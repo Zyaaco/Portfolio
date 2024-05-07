@@ -18,7 +18,7 @@ const experiences: experience[] = [
   {
     _id: 1,
     company: "ArtMake",
-    companyImage: "/experience/Artmake.svg",
+    companyImage: "./experience/Artmake.svg",
     isCurrentlyWorkingHere: true,
     dateStarted: "2023, Jul 18",
     dateEnded: "Present",
@@ -30,19 +30,19 @@ const experiences: experience[] = [
     ],
     technologies: [
       {
-        image: "/skills/thirdweb.png",
+        image: "./skills/thirdweb.png",
         _id: 1,
       },
       {
-        image: "/skills/nextjs.png",
+        image: "./skills/nextjs.png",
         _id: 2,
       },
       {
-        image: "/skills/supabase.png",
+        image: "./skills/supabase.png",
         _id: 3,
       },
       {
-        image: "/skills/tailwindcss.png",
+        image: "./skills/tailwindcss.png",
         _id: 4,
       },
     ],
@@ -50,7 +50,7 @@ const experiences: experience[] = [
   {
     _id: 2,
     company: "UAB Gliukolvetas",
-    companyImage: "/experience/gliuk.png",
+    companyImage: "./experience/gliuk.png",
     isCurrentlyWorkingHere: false,
     dateStarted: "2023 Mar 20",
     dateEnded: "2023 Jun 20",
@@ -62,19 +62,19 @@ const experiences: experience[] = [
     ],
     technologies: [
       {
-        image: "/skills/photoshop.png",
+        image: "./skills/photoshop.png",
         _id: 1,
       },
       {
-        image: "/skills/excel.png",
+        image: "./skills/excel.png",
         _id: 2,
       },
       {
-        image: "/skills/word.png",
+        image: "./skills/word.png",
         _id: 3,
       },
       {
-        image: "/skills/wordpress.png",
+        image: "./skills/wordpress.png",
         _id: 4,
       },
     ],

@@ -61,7 +61,7 @@ function Project({ project, i, length }: Props) {
         </p>
         <Link href={project.github_link} target="_blank" rel="noreferrer">
           <Image
-            src="/github.svg"
+            src="./github.svg"
             alt="Github logo"
             width={98}
             height={96}

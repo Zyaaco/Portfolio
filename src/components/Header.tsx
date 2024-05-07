@@ -24,7 +24,7 @@ function Header() {
       >
         <Link href="https://github.com/zyaaco" target="_blank" rel="noreferrer">
           <Image
-            src="/github.svg"
+            src="./github.svg"
             alt="Github logo"
             width={98}
             height={96}
@@ -37,7 +37,7 @@ function Header() {
           rel="noreferrer"
         >
           <Image
-            src="/linkedin.svg"
+            src="./linkedin.svg"
             alt="Github logo"
             width={50}
             height={50}
@@ -64,7 +64,7 @@ function Header() {
           className="flex flex-row gap-2 items-center text-[#EFF6E0] cursor-pointer"
         >
           <Image
-            src="/email.svg"
+            src="./email.svg"
             alt="Email logo"
             width={800}
             height={800}
