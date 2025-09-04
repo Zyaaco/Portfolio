@@ -31,17 +31,6 @@ function ContactMe() {
         </h4>
 
         <div className="space-y-10">
-          <div className="flex items-center space-x-5 justify-center">
-            <PhoneIcon className="text-[#AEC3B0] h-7 w-7 animate-pulse" />
-            <a
-              className="text-md sm:text-2xl"
-              href="tel:+37064745605"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              +37064745605
-            </a>
-          </div>
 
           <div className="flex items-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#AEC3B0] h-7 w-7 animate-pulse" />
@@ -53,13 +42,6 @@ function ContactMe() {
             >
               orestasksanas13@gmail.com
             </a>
-          </div>
-
-          <div className="flex items-center space-x-5 justify-center">
-            <MapIcon className="text-[#AEC3B0] h-7 w-7 animate-pulse" />
-            <p className="text-md sm:text-2xl">
-              Lithuania, Radviliškio r., Vėriškiai
-            </p>
           </div>
         </div>
 
